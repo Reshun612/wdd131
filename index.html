@@ -1,23 +1,64 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dedrick's WDD 131 Dynamic Web Fundamentals course projects.">
+    <meta name="author" content="Dedrick Irby">
     <title>WDD 131 - Dedrick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            color: #17202a;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 45px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.12);
+        }
+        h1 { color: #003b64; }
+        h2 { color: #006eb6; margin-top: 35px; }
+        .project {
+            display: block;
+            padding: 16px 18px;
+            margin: 12px 0;
+            border-left: 5px solid #006eb6;
+            background: #eef6fb;
+            color: #003b64;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 8px;
+        }
+        .project:hover {
+            background: #dceefa;
+            transform: translateX(4px);
+        }
+    </style>
 </head>
 <body>
-    <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+    <main>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <p>Welcome to my WDD 131 website. This page contains my course projects and assignments.</p>
 
-    <p>Welcome to my WDD 131 website.</p>
+        <h2>Week 1 Projects</h2>
 
-    <h2>Week 1</h2>
-
-    <p>
-        <a href="ponder_wk1b.html">
+        <a class="project" href="ponder_wk1b.html">
             JavaScript Variables and Constants
         </a>
-    </p>
+
+        <a class="project" href="ponder/meta-css.html">
+            HTML, CSS, and JavaScript Practice
+        </a>
+
+        <a class="project" href="mission/">
+            🎓 Mission Statement
+        </a>
+    </main>
 </body>
 </html>
-```
