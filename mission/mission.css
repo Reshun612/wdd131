@@ -1,99 +1,17 @@
 /* WDD 131 - Mission Statement */
 
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background-color: #ffffff;
-    color: #111111;
-    margin: 0;
-    padding: 50px 20px;
-}
+* { box-sizing: border-box; }
 
-.mission-container {
-    max-width: 910px;
-    margin: 0 auto;
-    border: 1px solid #aaa;
-    padding: 70px 85px 55px;
-    box-sizing: border-box;
-}
-
-h1 {
-    text-align: center;
-    font-size: 38px;
-    letter-spacing: 2px;
-    margin: 10px 0 22px;
-}
-
-.subtitle {
-    text-align: center;
-    color: #006eb6;
-    letter-spacing: 5px;
-    font-size: 16px;
-    margin: 0 auto 8px;
-}
-
-.divider {
-    border: 0;
-    border-top: 1px solid #d4d4d4;
-    max-width: 595px;
-    margin: 0 auto 48px;
-}
-
-.mission-text {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 20px;
-    line-height: 1.65;
-}
-
-.intro {
-    margin-bottom: 25px;
-}
-
-.emphasis {
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-ol {
-    padding-left: 42px;
-    margin-top: 0;
-}
-
-li {
-    padding-left: 4px;
-    margin-bottom: 22px;
-}
-
-.logo {
-    display: block;
-    width: 145px;
-    max-width: 45%;
-    margin: 55px auto 0;
-}
-
-@media (max-width: 700px) {
-    body {
-        padding: 20px 10px;
-    }
-
-    .mission-container {
-        padding: 40px 25px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    .subtitle {
-        font-size: 13px;
-        letter-spacing: 3px;
-    }
-
-    .mission-text {
-        font-size: 17px;
-    }
-
-    .logo {
-        width: 125px;
-    }
-}
+body { margin: 0; padding: 40px 18px; background: #f2f4f7; color: #1a1a1a; font-family: Georgia, "Times New Roman", serif; }
+.mission-container { width: min(900px, 100%); margin: 0 auto; padding: 65px 85px 60px; background: #fff; border: 2px solid #006eb6; border-top: 12px solid #006eb6; box-shadow: 0 12px 35px rgba(0,0,0,.12); }
+h1 { margin: 0; text-align: center; color: #003b64; font-size: 42px; font-weight: 700; letter-spacing: 3px; }
+.subtitle { margin: 14px 0 18px; text-align: center; color: #006eb6; font-family: Arial, sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 4px; }
+.divider { width: 75%; margin: 0 auto 50px; border: 0; border-top: 2px solid #d8e3eb; }
+.mission-text { max-width: 650px; margin: 0 auto; font-size: 20px; line-height: 1.75; }
+.intro { margin: 0 0 28px; }
+.emphasis { margin: 0 0 20px; color: #003b64; font-weight: 700; font-style: italic; }
+ol { margin: 0; padding-left: 42px; }
+li { margin-bottom: 22px; padding-left: 8px; }
+li::marker { color: #006eb6; font-weight: 700; }
+.logo { display: block; width: 160px; margin: 50px auto 0; }
+@media (max-width: 700px) { body { padding: 15px 8px; } .mission-container { padding: 40px 25px; } h1 { font-size: 31px; letter-spacing: 2px; } .subtitle { font-size: 12px; letter-spacing: 2px; } .divider { width: 90%; margin-bottom: 35px; } .mission-text { font-size: 17px; line-height: 1.65; } .logo { width: 130px; } }
