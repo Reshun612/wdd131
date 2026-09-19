@@ -2,43 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Meta Tags and CSS Selectors</title>
+    <meta name="description" content="An in-depth guide to HTML, CSS, and JavaScript.">
+
+    <meta name="author" content="Dedrick Irby">
+
+    <title>HTML, CSS, and JS</title>
 
     <style>
         /* Element selector */
-        p {
-            font-size: 18px;
-        }
-
-        /* Class selector */
-        .highlight {
-            color: blue;
-            font-weight: bold;
+        h2 {
+            color: #003366;
         }
 
         /* ID selector */
-        #special {
-            background-color: lightgray;
-            padding: 10px;
+        #content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Class selector */
+        .list {
+            margin-bottom: 20px;
+        }
+
+        /* Descendant combinator */
+        #topics h2 {
+            margin-top: 25px;
+        }
+
+        /* Child combinator */
+        #topics > h2 {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+
+        /* Adjacent sibling combinator */
+        h2 + ul {
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        /* General sibling combinator */
+        h2 ~ ul {
+            border-radius: 5px;
+        }
+
+        /* Pseudo-class */
+        li:nth-of-type(2) {
+            font-weight: bold;
+        }
+
+        /* Link hover pseudo-class */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Meta Tags and CSS Selectors</h1>
+    <div id="content">
 
-    <p>This is a paragraph styled with an element selector.</p>
+        <h1>HTML, CSS, and JS</h1>
 
-    <p class="highlight">
-        This paragraph uses a class selector.
-    </p>
+        <p>
+            The foundational technologies that power websites and web applications
+        </p>
 
-    <p id="special">
-        This paragraph uses an ID selector.
-    </p>
+        <hr>
+
+        <img
+            src="https://wddbyui.github.io/wdd131/images/trifecta.png"
+            alt="JS, CSS, and HTML logos"
+        >
+
+        <div id="topics">
+
+            <h2>HyperText Markup Language</h2>
+
+            <ul class="list">
+                <li>Defines the structure and content of a web page.</li>
+                <li>Without HTML there's nothing for the browser to display.</li>
+            </ul>
+
+            <h2>Cascading Style Sheets</h2>
+
+            <ul class="list">
+                <li>Controls how the HTML elements look.</li>
+                <li>Without CSS pages look plain and unstyled.</li>
+            </ul>
+
+            <h2>JavaScript</h2>
+
+            <ul class="list">
+                <li>Adds interactivity and dynamic behavior.</li>
+                <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
+            </ul>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
