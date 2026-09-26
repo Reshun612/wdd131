@@ -6,13 +6,20 @@
     <meta name="description" content="Brigham Young University-Idaho mission statement.">
     <meta name="author" content="Dedrick Irby">
     <title>BYU-Idaho Mission Statement</title>
-    <link rel="stylesheet" href="mission.css?v=2">
+    <link rel="stylesheet" href="mission.css">
+    <script src="mission.js" defer></script>
 </head>
-<body>
+
+<body class="dark">
     <main class="mission-container">
         <h1>MISSION STATEMENT</h1>
 
         <p class="subtitle">BRIGHAM YOUNG UNIVERSITY-IDAHO</p>
+
+        <select id="theme-select" aria-label="Choose a theme">
+            <option value="light">Light</option>
+            <option value="dark" selected>Dark</option>
+        </select>
 
         <hr class="divider">
 
@@ -27,28 +34,18 @@
             <p class="emphasis">The university does this by:</p>
 
             <ol>
-                <li>
-                    Building testimonies of the restored gospel of Jesus Christ and
-                    fostering its principles in a wholesome academic, cultural, and social
-                    environment.
-                </li>
-                <li>
-                    Providing a high-quality education that prepares students of diverse
-                    interests and abilities for lifelong learning and employment.
-                </li>
-                <li>
-                    Serving as many students as possible within resource constraints.
-                </li>
-                <li>
-                    Delivering education that is affordable for students and the Church.
-                </li>
+                <li>Building testimonies of the restored gospel of Jesus Christ and fostering its principles in a wholesome academic, cultural, and social environment.</li>
+                <li>Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment.</li>
+                <li>Serving as many students as possible within resource constraints.</li>
+                <li>Delivering education that is affordable for students and the Church.</li>
             </ol>
         </div>
 
         <img
+            id="logo"
             class="logo"
-            src="https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp"
-            alt="BYU Idaho logo"
+            src="https://wddbyui.github.io/wdd131/images/byui-logo-white.webp"
+            alt="BYU-Idaho logo"
         >
     </main>
 </body>
