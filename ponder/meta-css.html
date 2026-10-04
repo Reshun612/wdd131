@@ -3,138 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An in-depth guide to HTML, CSS, and JavaScript.">
+    <meta name="description" content="WDD 131 Responsive Design Ponder">
     <meta name="author" content="Dedrick Irby">
-    <title>HTML, CSS, and JS</title>
-
-    <style>
-        /* Element selector */
-        body {
-            font-family: Arial, sans-serif;
-            background: #0b1220;
-            color: #e8f1ff;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 8px;
-        }
-
-        h2 {
-            color: #66b3ff;
-            margin-top: 0;
-        }
-
-        p {
-            color: #b9c8da;
-        }
-
-        /* ID selector */
-        #content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 50px 24px;
-        }
-
-        /* Class selector */
-        .list {
-            margin: 0;
-            padding: 20px 20px 20px 40px;
-            background: #121e31;
-            border: 1px solid #28415f;
-            border-radius: 12px;
-        }
-
-        /* Descendant combinator */
-        #topics h2 {
-            letter-spacing: 0.5px;
-        }
-
-        /* Child combinator */
-        #topics > h2 {
-            border-bottom: 2px solid #2d8cff;
-            padding-bottom: 8px;
-        }
-
-        /* Adjacent sibling combinator */
-        h2 + ul {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-        }
-
-        /* General sibling combinator */
-        h2 ~ ul {
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        h2 ~ ul:hover {
-            transform: translateY(-3px);
-            border-color: #2d8cff;
-        }
-
-        /* Pseudo-class selector */
-        li:nth-of-type(2) {
-            font-weight: bold;
-        }
-
-        /* Link hover pseudo-class */
-        a:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 28px auto;
-            border-radius: 14px;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid #28415f;
-            margin: 28px 0;
-        }
-    </style>
+    <title>WDD 131 - Responsive Design</title>
+    <link rel="stylesheet" href="meta-css.css">
 </head>
-
 <body>
-    <div id="content">
-        <h1>HTML, CSS, and JS</h1>
+    <header>
+        <h1>Responsive Design 📖 Scriptures</h1>
 
-        <p>The foundational technologies that power websites and web applications.</p>
+        <button class="menu-btn" aria-label="Open navigation menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
 
-        <hr>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Scriptures</a>
+            <a href="#">Favorites</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
 
-        <img
-            src="https://wddbyui.github.io/wdd131/images/trifecta.png"
-            alt="JS, CSS, and HTML logos"
-        >
+    <main>
+        <section>
+            <h2>Helaman 5:12</h2>
+            <p>
+                And now, my sons, remember, remember that it is upon the rock of our
+                Redeemer, who is Christ, the Son of God, that ye must build your
+                foundation; that when the devil shall send forth his mighty winds,
+                yea, his shafts in the whirlwind, yea, when all his hail and his
+                mighty storm shall beat upon you, it shall have no power over you to
+                drag you down to the gulf of misery and endless wo, because of the
+                rock upon which ye are built, which is a sure foundation, a foundation
+                whereon if men build they cannot fall.
+            </p>
+        </section>
 
-        <div id="topics">
-            <h2>HyperText Markup Language</h2>
+        <section>
+            <h2>Mosiah 5:13</h2>
+            <p>
+                For how knoweth a man the master whom he has not served, and who is a
+                stranger unto him, and is far from the thoughts and intents of his heart?
+            </p>
+        </section>
 
-            <ul class="list">
-                <li>Defines the structure and content of a web page.</li>
-                <li>Without HTML there's nothing for the browser to display.</li>
-            </ul>
+        <section>
+            <h2>2 Nephi 32:9</h2>
+            <p>
+                But behold, I say unto you that ye must pray always, and not faint;
+                that ye must not perform any thing unto the Lord save in the first
+                place ye shall pray unto the Father in the name of Christ, that he
+                will consecrate thy performance unto thee, that thy performance may
+                be for the welfare of thy soul.
+            </p>
+        </section>
+    </main>
 
-            <h2>Cascading Style Sheets</h2>
-
-            <ul class="list">
-                <li>Controls how the HTML elements look.</li>
-                <li>Without CSS pages look plain and unstyled.</li>
-            </ul>
-
-            <h2>JavaScript</h2>
-
-            <ul class="list">
-                <li>Adds interactivity and dynamic behavior.</li>
-                <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
-            </ul>
-        </div>
-    </div>
+    <footer>
+        <p>Dedrick Irby</p>
+        <p>Brigham Young University - Idaho 2026</p>
+    </footer>
 </body>
 </html>
