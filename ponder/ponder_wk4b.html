@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive photo gallery with an accessible image modal.">
+  <title>Responsive Gallery with Modals | WDD 131</title>
+  <link rel="stylesheet" href="ponder_wk4b.css">
+  <script src="ponder_wk4b.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1>Responsive Gallery</h1>
+    <p>Select a photo to view it larger.</p>
+  </header>
+  <main>
+    <section class="gallery" aria-label="Photo gallery">
+      <figure><img class="gallery-image" src="https://images.unsplash.com/photo-1499757805022-7f8f3c2e6c50?auto=format&fit=crop&w=600&q=80" alt="Notebook and workspace on a desk" data-full="https://images.unsplash.com/photo-1499757805022-7f8f3c2e6c50?auto=format&fit=max&w=1600&q=85"><figcaption>Workspace</figcaption></figure>
+      <figure><img class="gallery-image" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Comfortable couch in a living room" data-full="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=max&w=1600&q=85"><figcaption>Living room</figcaption></figure>
+      <figure><img class="gallery-image" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=80" alt="Bright office desk and chairs" data-full="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=max&w=1600&q=85"><figcaption>Office</figcaption></figure>
+      <figure><img class="gallery-image" src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80" alt="Computer keyboard on a desk" data-full="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=max&w=1600&q=85"><figcaption>Keyboard</figcaption></figure>
+      <figure><img class="gallery-image" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Smartphone close-up" data-full="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=max&w=1600&q=85"><figcaption>Phone</figcaption></figure>
+      <figure><img class="gallery-image" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Desk and chair in a home office" data-full="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=max&w=1600&q=85"><figcaption>Home office</figcaption></figure>
+    </section>
+  </main>
+  <dialog class="viewer" aria-label="Expanded photo viewer">
+    <button class="close-viewer" type="button" aria-label="Close expanded image">×</button>
+    <img class="viewer-image" src="" alt="">
+    <p class="viewer-caption"></p>
+  </dialog>
+  <footer><p>WDD 131 · Week 4B Practice</p></footer>
+</body>
+</html>
