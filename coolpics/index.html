@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cool Pics responsive design project for WDD 131.">
-    <meta name="author" content="Dedrick Irby">
-    <title>Cool Pics 📷</title>
-    <link rel="stylesheet" href="coolpics.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cool Pics responsive photo gallery for WDD 131.">
+  <meta name="author" content="Dedrick Irby">
+  <title>Cool Pics 📷</title>
+  <link rel="stylesheet" href="coolpics.css">
+  <script src="coolpics.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Cool Pics 📷</h1>
-
-        <button class="menu-button" type="button">Menu</button>
-
-        <nav aria-label="Main navigation">
-            <a href="../index.html">Home</a>
-            <a href="#">People</a>
-            <a href="#">Places</a>
-            <a href="#">About</a>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Current Work</h2>
-
-        <section class="gallery" aria-label="Cool pictures">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-            <img src="https://harleywolfley.github.io/wdd131/coolpics/norris-sm.jpeg" alt="Snowy landscape with a steaming geothermal pool">
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Dedrick Irby | WDD 131</p>
-    </footer>
+  <header>
+    <h1>Cool Pics 📷</h1>
+    <button class="menu-button" type="button" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+    <nav id="main-navigation" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <main>
+    <h2 id="gallery">Current Work</h2>
+    <p class="gallery-intro">Choose a picture to see a larger view.</p>
+    <section class="gallery" aria-label="Cool pictures">
+      <figure><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&h=600&q=85" data-full="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=max&w=1600&q=90" alt="Mountain lake surrounded by green hills"><figcaption>Mountain lake</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&h=600&q=85" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=max&w=1600&q=90" alt="Sunlight shining over a dramatic natural landscape"><figcaption>Open landscape</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&h=600&q=85" data-full="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=max&w=1600&q=90" alt="Deer standing in a forest clearing"><figcaption>Wildlife</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&h=600&q=85" data-full="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=max&w=1600&q=90" alt="Sunlight filtering through a green forest"><figcaption>Forest trail</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&h=600&q=85" data-full="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=max&w=1600&q=90" alt="Tall rocky mountains under a bright sky"><figcaption>Rocky peaks</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&h=600&q=85" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=max&w=1600&q=90" alt="Quiet lake reflecting mountains at sunset"><figcaption>Evening reflections</figcaption></figure>
+    </section>
+    <section class="about" id="about">
+      <h2>About Cool Pics</h2>
+      <p>A responsive photo gallery made to practice layout, accessible image descriptions, and a larger image viewer.</p>
+    </section>
+  </main>
+  <dialog class="viewer" aria-label="Expanded image viewer">
+    <button class="close-viewer" type="button" aria-label="Close image viewer">×</button>
+    <img class="viewer-image" src="" alt="">
+    <p class="viewer-caption"></p>
+  </dialog>
+  <footer><p>&copy; 2026 Dedrick Irby | WDD 131</p></footer>
 </body>
 </html>
