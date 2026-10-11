@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 responsive navigation menu practice.">
+  <title>Responsive Menu | WDD 131</title>
+  <link rel="stylesheet" href="ponder_wk4a.css">
+  <script src="ponder_wk4a.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="ponder_wk4a.html">WDD 131</a>
+    <button class="menu-button" type="button" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="menu-icon" aria-hidden="true">☰</span>
+      <span class="menu-button-label">Menu</span>
+    </button>
+    <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="intro">
+      <p class="eyebrow">WDD 131 · Week 4</p>
+      <h1>Responsive Navigation Menu</h1>
+      <p>This page demonstrates a menu that adapts to different screen sizes. On a small screen, use the Menu button to show or hide the navigation links. On a larger screen, the links appear in a horizontal row.</p>
+    </section>
+    <section class="content-grid" aria-label="Page sections">
+      <article id="about">
+        <h2>About</h2>
+        <p>Responsive design helps a website remain clear and usable on phones, tablets, and desktop computers.</p>
+      </article>
+      <article id="services">
+        <h2>Services</h2>
+        <p>CSS media queries adjust the layout, and JavaScript controls the mobile menu button.</p>
+      </article>
+      <article id="contact">
+        <h2>Contact</h2>
+        <p>Resize the browser window to see the navigation change between mobile and desktop layouts.</p>
+      </article>
+    </section>
+  </main>
+  <footer><p>WDD 131 · Responsive Menu Practice</p></footer>
+</body>
+</html>
