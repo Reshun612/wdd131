@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 Week 5 Ponder: accessibility, design, and responsive CSS Grid practice.">
+  <meta name="author" content="Dedrick Irby">
+  <title>Accessibility and Design | WDD 131</title>
+  <link rel="stylesheet" href="ponder_wk5.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">WDD 131 · Week 5 Ponder</p>
+      <h1>Accessibility &amp; Design</h1>
+      <p class="intro">Thoughtful design helps everyone find, understand, and enjoy the content.</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-content">
+    <section class="section-heading" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured movie picks</h2>
+      <p>Practice clear content structure, readable contrast, descriptive text, and responsive card layouts.</p>
+    </section>
+
+    <div class="movie-grid">
+      <article class="movie-card">
+        <div class="poster poster-adventure" role="img" aria-label="Illustrated mountain peaks beneath a sunrise"></div>
+        <div class="card-body">
+          <p class="category">Adventure</p>
+          <h3>The Mountain Path</h3>
+          <p>A young explorer discovers that courage grows one step at a time.</p>
+          <p class="rating"><span aria-hidden="true">★★★★☆</span> <span class="sr-only">Four out of five stars</span></p>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <div class="poster poster-space" role="img" aria-label="Illustrated planets and stars against a deep space background"></div>
+        <div class="card-body">
+          <p class="category">Science fiction</p>
+          <h3>Beyond the Stars</h3>
+          <p>A close-knit crew searches for a new home among distant worlds.</p>
+          <p class="rating"><span aria-hidden="true">★★★★★</span> <span class="sr-only">Five out of five stars</span></p>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <div class="poster poster-ocean" role="img" aria-label="Illustrated ocean waves beneath a golden evening sky"></div>
+        <div class="card-body">
+          <p class="category">Family</p>
+          <h3>Ocean of Memories</h3>
+          <p>A family reconnects during a summer beside the sea.</p>
+          <p class="rating"><span aria-hidden="true">★★★★☆</span> <span class="sr-only">Four out of five stars</span></p>
+        </div>
+      </article>
+    </div>
+
+    <section class="accessibility-notes" aria-labelledby="principles-heading">
+      <h2 id="principles-heading">Accessible design checklist</h2>
+      <ul>
+        <li>Use semantic headings in a logical order.</li>
+        <li>Keep text and background colors easy to distinguish.</li>
+        <li>Provide meaningful alternative text for informative images.</li>
+        <li>Make layouts responsive so content works on small and large screens.</li>
+        <li>Include a skip link and visible keyboard focus styles.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>WDD 131 · Dynamic Web Fundamentals</p>
+    <p>Created by Dedrick Irby · 2026</p>
+  </footer>
+</body>
+</html>
