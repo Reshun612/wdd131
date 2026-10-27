@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 Week 6 Ponder assignment demonstrating JavaScript array methods map, reduce, filter, and indexOf.">
+  <meta name="author" content="Dedrick Irby">
+  <title>WDD 131 | Array Methods</title>
+  <script src="arrays.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 760px; margin: 2rem auto; padding: 0 1rem; color: #172033; }
+    header { border-bottom: 3px solid #2563eb; margin-bottom: 1.5rem; }
+    h1, h2 { color: #174ea6; }
+    section { background: #f3f6fb; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 8px; }
+    code { background: #e2e8f0; padding: .15rem .35rem; border-radius: 4px; }
+    .result { font-weight: bold; color: #12633a; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WDD 131: Array Methods</h1>
+    <p>Week 6 Ponder — JavaScript practice</p>
+  </header>
+  <main>
+    <section>
+      <h2>Activity 1: map</h2>
+      <p>Use <code>map()</code> and a template function to turn each step into a list item.</p>
+      <ul id="myList"></ul>
+    </section>
+    <section>
+      <h2>Activity 2: map</h2>
+      <p>Convert the letter grades A, B, and A into GPA points.</p>
+      <p>GPA points: <span class="result" id="gpaPoints"></span></p>
+    </section>
+    <section>
+      <h2>Activity 3: reduce</h2>
+      <p>Use <code>reduce()</code> to add the GPA points, then divide by the number of grades.</p>
+      <p>Calculated GPA: <span class="result" id="gpa"></span></p>
+    </section>
+    <section>
+      <h2>Activity 4: filter</h2>
+      <p>Use <code>filter()</code> to select fruit names with fewer than six characters.</p>
+      <p>Short fruit names: <span class="result" id="shortWords"></span></p>
+    </section>
+    <section>
+      <h2>Activity 5: indexOf</h2>
+      <p>Find the position of luckyNumber (21) in the array [12, 34, 21, 54].</p>
+      <p>Index of 21: <span class="result" id="luckyIndex"></span></p>
+    </section>
+  </main>
+</body>
+</html>
