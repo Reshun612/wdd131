@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 Week 7 Ponder: working with forms, optional inputs, and validation.">
+  <title>WDD 131 | Form Checkout</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="form.css">
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">WDD 131 <span>Dynamic Web Fundamentals</span></a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Week 7 Ponder</p>
+      <h1>Checkout Form</h1>
+      <p>Enter your information to complete this practice checkout. Fields marked <span aria-hidden="true">*</span> are required.</p>
+    </section>
+
+    <form id="checkout-form">
+      <fieldset>
+        <legend>Contact information</legend>
+        <div class="field">
+          <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+          <input id="full-name" name="fullName" type="text" autocomplete="name" required minlength="2">
+        </div>
+        <div class="field">
+          <label for="email">Email address <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number (optional)</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="555-555-5555">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Order details</legend>
+        <div class="field">
+          <label for="product">Choose a product <span aria-hidden="true">*</span></label>
+          <select id="product" name="product" required>
+            <option value="">-- Select a product --</option>
+            <option value="notebook">WDD Notebook — $8.00</option>
+            <option value="shirt">BYU-Idaho T-shirt — $18.00</option>
+            <option value="mug">Coffee Mug — $12.00</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="quantity">Quantity <span aria-hidden="true">*</span></label>
+          <input id="quantity" name="quantity" type="number" min="1" max="10" value="1" required>
+        </div>
+        <div class="field">
+          <label for="notes">Order notes (optional)</label>
+          <textarea id="notes" name="notes" rows="3" maxlength="250" placeholder="Add any special instructions"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Shipping address</legend>
+        <div class="field">
+          <label for="address">Street address <span aria-hidden="true">*</span></label>
+          <input id="address" name="address" type="text" autocomplete="street-address" required>
+        </div>
+        <div class="field">
+          <label for="city">City <span aria-hidden="true">*</span></label>
+          <input id="city" name="city" type="text" autocomplete="address-level2" required>
+        </div>
+        <div class="field">
+          <label for="state">State <span aria-hidden="true">*</span></label>
+          <input id="state" name="state" type="text" autocomplete="address-level1" required maxlength="30">
+        </div>
+        <div class="field">
+          <label for="zip">ZIP code <span aria-hidden="true">*</span></label>
+          <input id="zip" name="zip" type="text" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}(-[0-9]{4})?" title="Enter a 5-digit ZIP code, optionally followed by 4 digits." required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment</legend>
+        <p class="fieldset-help">This is a practice form. Do not enter real payment information.</p>
+        <div class="field">
+          <label for="payment">Payment method <span aria-hidden="true">*</span></label>
+          <select id="payment" name="payment" required>
+            <option value="">-- Select payment method --</option>
+            <option value="card">Credit or debit card</option>
+            <option value="gift">Gift card</option>
+          </select>
+        </div>
+        <div id="card-fields" class="conditional-fields" hidden>
+          <div class="field">
+            <label for="card-name">Name on card <span aria-hidden="true">*</span></label>
+            <input id="card-name" name="cardName" type="text" autocomplete="cc-name">
+          </div>
+          <div class="field">
+            <label for="card-number">Card number <span aria-hidden="true">*</span></label>
+            <input id="card-number" name="cardNumber" type="text" inputmode="numeric" autocomplete="cc-number" pattern="[0-9 ]{13,19}" maxlength="23" title="Enter a card number using 13 to 19 digits.">
+          </div>
+          <div class="field">
+            <label for="expiry">Expiration date <span aria-hidden="true">*</span></label>
+            <input id="expiry" name="expiry" type="month" autocomplete="cc-exp">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit">Place practice order</button>
+        <button class="secondary" type="reset">Clear form</button>
+      </div>
+      <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>WDD 131 • Week 7 Ponder • Form practice</p>
+  </footer>
+</body>
+</html>
