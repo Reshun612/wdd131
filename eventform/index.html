@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WDD 131 Event Ticket Form. Register for an event and receive practice ticket information.">
+<title>Event Ticket Form | WDD 131</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="eventform.css">
+<script src="eventform.js" defer></script>
+</head>
+<body>
+<header class="site-header"><a href="../index.html" class="brand">WDD 131 <span>Dynamic Web Fundamentals</span></a></header>
+<main>
+<section class="hero"><p class="eyebrow">WDD 131 • Week 7 Prove</p><h1>Event Ticket Form</h1><p>Register for an upcoming event. Complete the form below to receive your ticket information.</p></section>
+<section class="form-card" aria-labelledby="registration-heading">
+<h2 id="registration-heading">Event registration</h2>
+<form id="event-form" novalidate>
+<div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+<div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<div class="field"><label for="event-date">Event date</label><input id="event-date" name="eventDate" type="date" required><small>Please choose a date after today.</small></div>
+<div class="field"><label for="attendee-type">Type</label><select id="attendee-type" name="attendeeType" required><option value="">-- Select attendee type --</option><option value="student">Student</option><option value="guest">Guest</option></select></div>
+<div id="type-details" class="field conditional-field" hidden><label id="type-details-label" for="type-details-input">Student I#</label><input id="type-details-input" name="typeDetails" type="text" disabled><small id="type-details-help"></small></div>
+<button type="submit">Get my ticket</button>
+</form>
+<div id="form-errors" class="message error-message" role="alert" aria-live="assertive" hidden></div>
+<section id="ticket" class="ticket" aria-live="polite" hidden>
+<div class="ticket-top"><p class="ticket-label">Registration confirmed</p><span class="ticket-icon" aria-hidden="true">✓</span></div>
+<h2>Your event ticket</h2><p id="ticket-name"></p>
+<dl><div><dt>Event date</dt><dd id="ticket-date"></dd></div><div><dt>Attendee</dt><dd id="ticket-type"></dd></div><div><dt>Ticket number</dt><dd id="ticket-number"></dd></div></dl>
+<p class="ticket-note">This is a sample ticket for the WDD 131 assignment. No real ticket has been issued.</p>
+</section>
+</section>
+</main>
+<footer><p>WDD 131 • Event Ticket Form • Week 7 Prove</p></footer>
+</body>
+</html>
