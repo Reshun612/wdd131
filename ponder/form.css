@@ -1,0 +1,100 @@
+:root {
+  --navy: #142b4a;
+  --blue: #1769aa;
+  --light-blue: #eaf3fb;
+  --ink: #202a36;
+  --muted: #5d6875;
+  --border: #cbd5df;
+  --white: #fff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #f4f7fa;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+.site-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 1rem max(1rem, calc((100% - 850px) / 2));
+}
+.brand {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.brand span {
+  display: block;
+  font-size: .8rem;
+  font-weight: 400;
+  color: #d6e6f5;
+}
+main { max-width: 850px; margin: 2rem auto; padding: 0 1rem; }
+.intro { margin-bottom: 1.5rem; }
+.eyebrow {
+  color: var(--blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .8rem;
+  margin-bottom: .3rem;
+}
+h1 { color: var(--navy); margin: 0 0 .5rem; font-size: clamp(2rem, 5vw, 2.7rem); }
+form {
+  background: var(--white);
+  padding: clamp(1rem, 4vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #142b4a12;
+}
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 0 1.25rem;
+}
+legend { color: var(--navy); font-weight: 700; padding: 0 .4rem; }
+.field { display: grid; gap: .35rem; margin: .85rem 0; }
+label { font-weight: 600; }
+label span { color: #b42318; }
+input, select, textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid #aab8c6;
+  border-radius: 6px;
+  padding: .65rem .75rem;
+  font: inherit;
+  background: #fff;
+  color: var(--ink);
+}
+textarea { resize: vertical; }
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid #8fc7f5;
+  outline-offset: 1px;
+  border-color: var(--blue);
+}
+.fieldset-help { color: var(--muted); font-size: .9rem; margin: .25rem 0; }
+.form-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+button {
+  border: 0;
+  border-radius: 6px;
+  background: var(--blue);
+  color: white;
+  padding: .8rem 1.2rem;
+  min-height: 46px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover { background: #0f528a; }
+button.secondary { background: #e5ebf1; color: var(--navy); }
+button.secondary:hover { background: #d4dfe9; }
+.form-message { font-weight: 700; color: #17623a; }
+footer { text-align: center; color: var(--muted); padding: 1rem; font-size: .9rem; }
+[hidden] { display: none !important; }
+@media (min-width: 650px) {
+  .field { max-width: 620px; }
+}
