@@ -1,0 +1,25 @@
+:root{--navy:#132c4b;--blue:#1769aa;--blue-light:#eaf3fb;--ink:#202a36;--muted:#5c6876;--border:#cbd5df;--white:#fff;--error:#a52222;--success:#17623a}
+*{box-sizing:border-box}
+body{margin:0;background:#f3f6fa;color:var(--ink);font:16px/1.55 Arial,Helvetica,sans-serif}
+.site-header{background:var(--navy);padding:1rem max(1rem,calc((100% - 850px)/2))}
+.brand{color:var(--white);text-decoration:none;font-size:1.2rem;font-weight:700}
+.brand span{display:block;color:#d4e5f5;font-size:.8rem;font-weight:400}
+main{max-width:850px;margin:2.25rem auto;padding:0 1rem}
+.hero{margin-bottom:1.5rem}.eyebrow{color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin:0 0 .4rem}
+h1{color:var(--navy);font-size:clamp(2rem,5vw,2.7rem);margin:0 0 .6rem;line-height:1.15}
+h2{color:var(--navy);margin-top:0}
+.form-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:clamp(1rem,4vw,2rem);box-shadow:0 8px 24px #132c4b12}
+form{display:grid;gap:1rem}.field{display:grid;gap:.35rem}label{font-weight:700}
+input,select{width:100%;min-height:46px;border:1px solid #aab8c6;border-radius:6px;padding:.65rem .75rem;font:inherit;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:3px solid #8fc7f5;outline-offset:1px;border-color:var(--blue)}
+small{color:var(--muted)}
+button{justify-self:start;border:0;border-radius:6px;min-height:46px;padding:.75rem 1.25rem;background:var(--blue);color:white;font:inherit;font-weight:700;cursor:pointer}
+button:hover{background:#0f528a}
+.message{margin-top:1rem;padding:1rem;border-radius:7px}.error-message{background:#fff0f0;color:var(--error);border:1px solid #e5aaaa}.error-message ul{margin:.5rem 0 0;padding-left:1.25rem}
+.ticket{margin-top:1.5rem;padding:1.5rem;border:2px dashed #77a5cc;border-radius:12px;background:var(--blue-light)}
+.ticket-top{display:flex;align-items:center;justify-content:space-between}.ticket-label{color:var(--success);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem}
+.ticket-icon{display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--success);color:white;font-weight:700}
+.ticket dl{margin:1rem 0}.ticket dl div{display:flex;flex-wrap:wrap;gap:.5rem;border-bottom:1px solid #c4d9eb;padding:.6rem 0}
+.ticket dt{font-weight:700;min-width:130px}.ticket dd{margin:0}.ticket-note{font-size:.85rem;color:var(--muted)}
+footer{text-align:center;padding:1.5rem 1rem;color:var(--muted);font-size:.9rem}[hidden]{display:none!important}
+@media(min-width:650px){form{max-width:600px}}
