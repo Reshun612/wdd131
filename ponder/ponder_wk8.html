@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 Week 8 Ponder practice using JavaScript objects and methods.">
+  <meta name="author" content="Dedrick Irby">
+  <title>W08 Ponder: JavaScript Objects | WDD 131</title>
+  <link rel="stylesheet" href="ponder_wk8.css">
+  <script src="ponder_wk8.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">WDD 131 · Week 8 Ponder</p>
+      <h1>JavaScript Objects</h1>
+      <p class="intro">Practice organizing related information with object properties, arrays, and methods.</p>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-content">
+    <section class="course-panel" aria-labelledby="course-title">
+      <p class="section-label">Course information</p>
+      <h2 id="courseName"></h2>
+      <p id="courseCode" class="course-code"></p>
+      <p class="help-text">Enter a section number and select Enroll Student to increase that section's enrollment.</p>
+    </section>
+
+    <section class="enrollment-panel" aria-labelledby="enrollment-heading">
+      <h2 id="enrollment-heading">Enroll a student</h2>
+      <div class="form-row">
+        <label for="sectionNumber">Section Number</label>
+        <input id="sectionNumber" type="number" min="1" step="1" placeholder="Example: 1">
+        <button id="enrollStudent" type="button">Enroll Student</button>
+      </div>
+      <p id="enrollmentMessage" class="message" role="status" aria-live="polite">Choose a section number to begin.</p>
+    </section>
+
+    <section class="sections-panel" aria-labelledby="sections-heading">
+      <h2 id="sections-heading">Course sections</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Section #</th>
+              <th scope="col">Room #</th>
+              <th scope="col"># Enrolled</th>
+              <th scope="col">Days</th>
+              <th scope="col">Instructor</th>
+            </tr>
+          </thead>
+          <tbody id="sections"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="concepts" aria-labelledby="concepts-heading">
+      <h2 id="concepts-heading">JavaScript concepts practiced</h2>
+      <ul>
+        <li><strong>Object:</strong> <code>aCourse</code> groups course information in key-value pairs.</li>
+        <li><strong>Properties:</strong> <code>code</code>, <code>name</code>, <code>logo</code>, and <code>sections</code> store data.</li>
+        <li><strong>Method:</strong> <code>enrollStudent()</code> is a function stored in the object.</li>
+        <li><strong>this:</strong> <code>this.sections</code> refers to the sections property of the current course object.</li>
+        <li><strong>findIndex():</strong> Finds the position of the section with the matching section number.</li>
+        <li><strong>map():</strong> Creates the table row markup for each section.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>WDD 131 · Dynamic Web Fundamentals</p>
+    <p>Created by Dedrick Irby · 2026</p>
+  </footer>
+</body>
+</html>
