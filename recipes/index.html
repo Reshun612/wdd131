@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover simple, delicious recipes for everyday cooking. Browse family-friendly meals and desserts in Dedrick Irby's Recipe Book.">
+  <meta name="author" content="Dedrick Irby">
+  <meta property="og:title" content="Recipe Book | WDD 131">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Discover simple, delicious recipes for everyday cooking.">
+  <meta property="og:image" content="https://reshun612.github.io/wdd131/recipes/images/apple-crisp.svg">
+  <meta property="og:url" content="https://reshun612.github.io/wdd131/recipes/">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Recipe Book | WDD 131</title>
+  <link rel="icon" href="images/recipe-book.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="recipes.css">
+  <script src="main.js" type="module"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Recipe Book home">
+      <img src="images/recipe-book.svg" alt="" width="64" height="64">
+      <span>RecipeBook</span>
+    </a>
+  </header>
+
+  <main>
+    <form class="search" role="search" action="#" method="get">
+      <label class="visually-hidden" for="site-search">Find a recipe</label>
+      <input type="search" id="site-search" name="q" placeholder="Find a recipe" autocomplete="off">
+      <button type="submit" aria-label="Search recipes">
+        <img src="images/search.svg" alt="" width="24" height="24">
+      </button>
+    </form>
+
+    <hr>
+
+    <section class="recipe-list" aria-label="Featured recipe">
+      <figure class="recipe">
+        <img class="recipe__image" src="images/apple-crisp.svg" alt="Warm apple crisp topped with a golden oat crumble" width="640" height="480">
+        <figcaption class="recipe__content">
+          <ul class="recipe__tags" aria-label="Recipe categories">
+            <li>Dessert</li>
+            <li>Fruit</li>
+          </ul>
+          <h1><a href="#apple-crisp">Apple Crisp</a></h1>
+          <p class="recipe__ratings">
+            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span class="empty-star" aria-hidden="true">☆</span>
+            </span>
+          </p>
+          <p class="recipe__description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+          <p class="recipe__meta"><strong>Prep:</strong> 30 min <span aria-hidden="true">·</span> <strong>Cook:</strong> 45 min</p>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="attribution" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    <nav class="social" aria-label="Social media">
+      <!-- Social media icon artwork provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+      <a href="https://www.instagram.com/" aria-label="Instagram"><img src="images/instagram_icon.svg" alt="" width="44" height="44"></a>
+      <a href="https://www.youtube.com/" aria-label="YouTube"><img src="images/youtube_icon.svg" alt="" width="44" height="44"></a>
+      <a href="https://www.pinterest.com/" aria-label="Pinterest"><img src="images/pinterest_icon.svg" alt="" width="44" height="44"></a>
+    </nav>
+    <p class="credit">WDD 131 · Created by Dedrick Irby</p>
+  </footer>
+</body>
+</html>
