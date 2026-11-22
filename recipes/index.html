@@ -25,41 +25,25 @@
   </header>
 
   <main>
-    <form class="search" role="search" action="#" method="get">
+    <form class="search" id="recipe-search" role="search">
       <label class="visually-hidden" for="site-search">Find a recipe</label>
-      <input type="search" id="site-search" name="q" placeholder="Find a recipe" autocomplete="off">
+      <input type="search" id="site-search" name="q" placeholder="Search recipes, ingredients, or tags" autocomplete="off">
       <button type="submit" aria-label="Search recipes">
         <img src="images/search.svg" alt="" width="24" height="24">
       </button>
     </form>
 
+    <p class="search-help" id="search-help">Try searching for chicken, dessert, potatoes, or waffles.</p>
     <hr>
 
-    <section class="recipe-list" aria-label="Featured recipe">
-      <figure class="recipe">
-        <img class="recipe__image" src="images/apple-crisp.svg" alt="Warm apple crisp topped with a golden oat crumble" width="640" height="480">
-        <figcaption class="recipe__content">
-          <ul class="recipe__tags" aria-label="Recipe categories">
-            <li>Dessert</li>
-            <li>Fruit</li>
-          </ul>
-          <h1><a href="#apple-crisp">Apple Crisp</a></h1>
-          <p class="recipe__ratings">
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span class="empty-star" aria-hidden="true">☆</span>
-            </span>
-          </p>
-          <p class="recipe__description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-          <p class="recipe__meta"><strong>Prep:</strong> 30 min <span aria-hidden="true">·</span> <strong>Cook:</strong> 45 min</p>
-        </figcaption>
-      </figure>
+    <section class="recipe-list" id="recipe-list" aria-label="Recipes" aria-live="polite">
+      <p class="loading-message">Loading a recipe for you...</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <a class="attribution" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
     <nav class="social" aria-label="Social media">
-      <!-- Social media icon artwork provided under CC from https://www.iconfinder.com/AlfredoCreates -->
       <a href="https://www.instagram.com/" aria-label="Instagram"><img src="images/instagram_icon.svg" alt="" width="44" height="44"></a>
       <a href="https://www.youtube.com/" aria-label="YouTube"><img src="images/youtube_icon.svg" alt="" width="44" height="44"></a>
       <a href="https://www.pinterest.com/" aria-label="Pinterest"><img src="images/pinterest_icon.svg" alt="" width="44" height="44"></a>
