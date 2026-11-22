@@ -3,6 +3,7 @@ import recipes from './recipes.mjs';
 // Use the assignment's recipe images hosted with the WDD 131 course materials.
 // The Apple Crisp illustration is already included in this project.
 const recipeImages = {
+  'apple-crisp.jpg': './images/apple-crisp.svg',
   'black-beans-and-rice.jpg': 'https://wddbyui.github.io/wdd131/images/recipe2/black-beans-and-rice.jpg',
   'chicken-curry.webp': 'https://wddbyui.github.io/wdd131/images/recipe2/chicken-curry.webp',
   'chocolate-chip-cookies.jpg': 'https://wddbyui.github.io/wdd131/images/recipe2/chocolate-chip-cookies.jpg',
